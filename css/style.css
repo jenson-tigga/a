@@ -1,0 +1,55 @@
+body{
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+h1{
+margin-top: 0;
+font-family: 'Sacramento', cursive;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.high{
+    background-color: #e3fdfd;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 160px;
+}
+
+
+
+.hoy{
+  position: absolute;
+  left: 300px;
+  bottom: 400px;
+}
+.boi{
+  position: absolute;
+  right:200px;
+  top: 20px;
+}
+.mon{
+  position:relative;
+  top:40px;
+}
+.circular{
+  height: 50%;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+.li {
+
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 10px;
+
+
+  width: 5%;
+}
