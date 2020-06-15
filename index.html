@@ -1,71 +1,182 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Jenson</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@200&family=Sacramento&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="high">
-      <img class="boi"src="image/cloud.png" alt="cloud image-img">
-      <h1> Jenson hear.</h1>
-      <p>May your love never end and if you need a friend, there's a seat hear alongside me.</p>
-      <img class="hoy" src="image/cloud.png" alt="cloud image-img">
-      <img class="mon" src="image/mountain.png" alt="mountain image-img">
 
-    </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img src="" alt="">
-        <h2>Hello.</h2>
-        <table>
-          <tr>
+<head>
+  <meta charset="utf-8">
+  <title>Jenson</title>
 
 
-          <td><img class="circular" src="https://pbs.twimg.com/profile_images/1237958558240538624/_M7-luam_400x400.jpg" alt="jenson's profile picture"></td>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
 
-        <td>  <p class="intro">Jenson Tigga (born 3 August 2001) is an singer, arranger, composer, producer, and multi-instrumentalist based in Pune, Maharastra. Jenson's style fuses elements of jazz, a cappella, groove, folk, electronic music, classical music, gospel, soul and improvisation, and often features extreme use of reharmonisation.</p>
 
-</td></tr>
-        </table>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
 
-      </div>
-      <hr>
-      <div class="skills">
-        <h2> Life.</h2>
-        <div class="skill-row">
-          <img class="jen" src="data:image/jpeg;base64,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" alt="jenson-">
 
-          <h3>About</h3>
-          <p class="bio">Jenson grew up in Ranchi, raised in a middel class family, with one elder brother.He attended W.John School for Elementary in Ranchi, and St.Francis School for Higher Secondary Education in Ranchi. Jenson briefly studied jazz piano at the Swarnaboomi Academy of Music in Chennai.</p>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="">Jenson</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+              <a class="nav-link" href="http://jensontigga.blogspot.com/">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta"></a>
+            </li>
+          </ul>
+
         </div>
-        <div class="ski">
-          <img class="" src="" alt="">
-          <h3>Dear you</h3>
-          <p>If you are out there and you're dealing I want to say this. Dear You, I know it sucks. I know it's scary, I know you feel like the undertow is pulling you in, and I know that you feel like drowning. And I'm sorry that you have to deal with it all. I want to tell you, that things will get better soon but I don't know your life story, I don't know your struggle, I don't know the severity of your illness and I cannot make you a patronizing promise like that. What I can say is that, hopefully, one day at some point in your future it will get better. That one point when you feel like giving up just remember that somewhere in your future maybe not tomorrow, maybe not day after, maybe not next year. But somewhere in your future, a day is waiting. And it is a simple and ordinary and profound day where you'll get one little thing right -like you'll make the perfect cup of tea, or sun and the wind will hit your face in that perfectly way that makes you want to take a lovely nap. Or a friend will tell a joke that will make you burst out in laughter... and in that second, on that day a voice in your head will say "I'm glad I stuck around for this. I'm glad, I fought off the abyss, I'm glad that I started it down and I'm glad that I'm here." I will also tell you that day will not last and it will go away. And for every good day there will be another bad one. Because this is who we are. We will wonder between the darkness and the light and that's okay. And when you feel like you're weak or at your weakest and you should give up, remember that you might think you are weak but you are someone else's source of strength whether you know it or not. And what we have, what we deal with, what we live with it isn't always nice and it isn't always pretty but.. It is. You are and you really should stay.
+      </nav>
 
-</p>
+
+
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h1 class="big-heading">May your love never end and if you need a friend, there's a seat hear alongside me.</h1>
+          <a type="button" class="btn btn-light btn-lg download-button"href="https://www.facebook.com/georgeousjensontigga"><i class="fab fa-facebook"></i> Facebook</a>
+          <a href="https://www.instagram.com/jenson_tigga/" type="button" class="btn btn-outline-light btn-lg download-button" ><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="title-image" src="https://scontent.fbom19-1.fna.fbcdn.net/v/t1.0-9/10392209_1689745187981875_3163037331394771823_n.jpg?_nc_cat=103&_nc_sid=174925&_nc_oc=AQlGq3KNQcaY-bcHTskI1clfjeTORFEgaiaktqCH0c8vpMukCxC09IjVesyeDJCZehs&_nc_ht=scontent.fbom19-1.fna&oh=49645f05055b3e20e458fce619039ec4&oe=5F0C588C">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-users fa-4x"></i>
+          <h3 class="feature-title">A friend.</h3>
+          <p>Helping to raise self-awareness.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title">We gonna make it.</h3>
+          <p> Everyone has a different experience.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x"></i>
+          <h3 class="feature-title">You're loved.</h3>
+          <p>You always have friend in me.</p>
         </div>
       </div>
-      <hr>
-      <p>Don't suffer in silence because "no one wants t hear about deepression." I would rather listern about your deepression,anxiety,stress or anything then hear about your death.I'm there for you.let's fight this shit.</p>
 
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>.</h3>
-        <a class="myButton"href="contact.html">CONTACT ME</a>
+
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">It feels good that people find themselves comfortable around you.</h2>
+          <img class="testimonial-image" src="https://scontent.fbom19-2.fna.fbcdn.net/v/t31.0-8/27993687_2014220422167843_6570348507912861367_o.jpg?_nc_cat=106&_nc_sid=174925&_nc_oc=AQkayU4fSY-Ri9dhgri4jTwmaJIljHa0Z97sbUN9pxDiJN5UKQlxaPRTSWRZDxkd28Y&_nc_ht=scontent.fbom19-2.fna&oh=2f0aa28c97486d6ab361afae210ab4dc&oe=5F0B2C9A" alt="rohan">
+          <em>Purnima, India</em>
+        </div>
+
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Be kind to your past version of  yourself, that version didn't know the things you know now. </h2>
+          <img class="testimonial-image" src="https://media-exp1.licdn.com/dms/image/C5103AQGu9h6ezrwJHw/profile-displayphoto-shrink_200_200/0?e=1593648000&v=beta&t=RGEPU8b0fbFWkW1KOEQDP9u_2goZfkO6nniwhjtlHRA" alt="tanmay">
+          <em>Alisha, India</em>
+        </div>
+
       </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+      </a>
     </div>
 
+  </section>
 
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.instagram.com/jenson_tigga/">Instagram</a>
-      <a class="footer-link" href="https://twitter.com/jenson_tigga?lang=en">Twitter</a>
-      <a class="footer-link" href="https://www.facebook.com/georgeousjensontigga">Facebook</a>
-      <p class="c">© 2020 Jenson Tigga.</p>
+  <h3>About</h3>
+
+  <p class="bio">Jenson grew up in Ranchi, raised in a middel class family, with one elder brother.He attended W.John School for Elementary in Ranchi, and St.Francis School for Higher Secondary Education in Ranchi. Jenson briefly studied jazz piano at the Swarnaboomi Academy of Music in Chennai.</p>
+
+
+
+
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+
+      <h3 class="big-heading">May you find laughter in the midst of broken days.</h3>
+      <a type="button" class="btn btn-light btn-lg download-button"href="https://www.facebook.com/georgeousjensontigga"><i class="fab fa-facebook"></i> Facebook</a>
+
+      <a href="https://www.instagram.com/jenson_tigga/" type="button" class="btn btn-outline-light btn-lg download-button" ><i class="fab fa-instagram"></i> Instagram</a>
+
+      <a  href="https://twitter.com/jenson_tigga?lang=en" class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-twitter"></i> Twitter</a>
     </div>
+  </section>
 
-  </body>
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <a href="https://www.facebook.com/georgeousjensontigga" class="social-icon fab fa-facebook-f"></a>
+      <a href="https://twitter.com/jenson_tigga?lang=en" class="social-icon fab fa-twitter"></a>
+      <a href="https://www.instagram.com/jenson_tigga/" class="social-icon fab fa-instagram"></i>
+      <a href="www.jensontigga5@gmail.com"class="social-icon fas fa-envelope"></a>
+      <p>©2020 Jenson Tigga</p>
+    </div>
+  </footer>
+
+
+</body>
+
 </html>
